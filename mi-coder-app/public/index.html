@@ -56,8 +56,6 @@
     </style>
 </head>
 <body>
-  
-    
     <div id="app2" class="row centro">
       <div><imagen :title="title"></imagen></div>
       <div class="col-3"><titulo1 :cont="continentes"></titulo1></div>
@@ -68,7 +66,6 @@
         <div class="col-3">
           <paises
           :listado="europa"
-          :estilo="estilo_uno"
           :clase="clase_uno"
           v-on:click.native="clicAfuera"
           ></paises>
@@ -76,14 +73,12 @@
         <div class="col-3">
           <paises
           :listado="asia"
-          :estilo="estilo_dos"
           :clase="clase_dos"
           ></paises>
         </div>
         <div class="col-3">
           <paises
           :listado="latinoamerica"
-          :estilo="estilo_tres"
           :clase="clase_tres"
           ></paises>
         </div>
@@ -140,10 +135,6 @@
                 {"id":3,"nombre":"BRASIL"},
                 {"id":4,"nombre":"CHILE"},
                 {"id":5,"nombre":"PERÚ"}],
-
-                estilo_uno: { 'background': '#e28743'},
-                estilo_dos: { 'background': '#063970'},
-                estilo_tres: { 'background': '#44bcd8'},
 
                 clase_uno: { 'letra-tab': true},
                 clase_dos: { 'letra-tab': true},
